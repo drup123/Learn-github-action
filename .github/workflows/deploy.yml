@@ -21,7 +21,7 @@ jobs:
           aws-region: ap-south-1
 
       - name: Upload Website Files
-        run: aws s3 sync . s3://YOUR_BUCKET_NAME --exclude ".git/*" --exclude ".github/*"
+        run: aws s3 sync . s3://drup-face-detection-bucket --exclude ".git/*" --exclude ".github/*"
 
       - name: Upload Images Folder
         run: aws s3 sync ./images s3://YOUR_BUCKET_NAME/images
