@@ -5,4 +5,4 @@ import boto3
 
 s3 = boto3.client('s3')
 
-s3.upload_file('index.html', 'your-bucket-name', 'index.html')
+s3.upload_file('index.html', 'github-actions-demo-drup', 'index.html')
